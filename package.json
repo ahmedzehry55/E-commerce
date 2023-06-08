@@ -1,0 +1,26 @@
+{
+  "name": "e-comerrce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon back-end/server",
+    "clinet": "npm start --prefix front-end",
+    "dev": "concurrently \"npm start\" \"npm run clinet\"",
+    "data:import": "node back-end/seedrs",
+    "data:destroy": "node back-end/seedrs -d"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22",
+    "redux-logger": "^3.0.6"
+  }
+}
